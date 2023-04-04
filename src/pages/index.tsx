@@ -14,7 +14,7 @@ const Home: NextPage<HomeProps> = ({ posts }: HomeProps) => {
     <div>
       <main className="container mx-auto py-8 px-4 md:px-0 flex flex-col">
         <h2 className="text-6xl text-bold font-serif text-yellow-800">
-          Sloth Blog
+          Mason Williams
         </h2>
         <div className="my-6 flex-col">
           {posts.map((post, idx) => {
