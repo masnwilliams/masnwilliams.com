@@ -13,10 +13,10 @@ const navItems = [
     href: "/projects",
     text: "Projects",
   },
-  // {
-  //   href: "/blog",
-  //   text: "Blog",
-  // },
+  {
+    href: "/blog",
+    text: "Blog",
+  },
 ];
 
 const NavBar = () => {

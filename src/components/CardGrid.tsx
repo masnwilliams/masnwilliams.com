@@ -3,6 +3,14 @@ import Card, { CardProps } from "./Card";
 const CardGrid = () => {
   const projects: CardProps[] = [
     {
+      title: "Bloxsmith",
+      image: undefined,
+      description:
+        "The ultimate marketplace for game developers, offering seamless transactions of 3D Models, Graphics, UI, Maps, and more in both real and gaming currencies.",
+      link: "https://bloxsmith.com/",
+      status: "inactive",
+    },
+    {
       title: "Space Foundry",
       image: "/space-foundry.png",
       description:
@@ -20,7 +28,7 @@ const CardGrid = () => {
     },
     {
       title: "GreenScan",
-      image: "/greenscan.png",
+      image: undefined,
       description:
         "A product that provides validated information about a company's sustainability efforts, helping consumers make informed decisions.",
       link: "https://greenscan.vercel.app/",
