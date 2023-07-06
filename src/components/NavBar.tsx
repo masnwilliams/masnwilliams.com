@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import SocialLinks from "@/components/SocialLinks";
 
 const navItems = [
   {
@@ -52,6 +53,8 @@ const NavBar = () => {
           {item.text}
         </Link>
       ))}
+
+      <SocialLinks />
     </div>
   );
 };
