@@ -20,7 +20,7 @@ const Card = ({ title, image, description, link, status }: CardProps) => {
   return (
     <>
       <Link href={link} target={"_blank"}>
-        <div className="max-w-sm rounded-2xl overflow-hidden hover:bg-gray-100 hover:scale-105 transition-all relative group">
+        <div className=" max-w-sm rounded-2xl overflow-hidden hover:bg-gray-100 hover:scale-105 transition-all relative group">
           <div className="text-gray-500 absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             <ExternalLinkIcon size={16} />
           </div>

@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 const HomePage = () => {
   const [cursorVisible, setCursorVisible] = useState<boolean>(true);
 
-  const typedText = useTypingEffect("Hey, I'm Mason.", 100);
+  const typedText = useTypingEffect("Hey, I'm Mason 👋", 100);
 
   useEffect(() => {
     const cursorInterval = setInterval(() => {
