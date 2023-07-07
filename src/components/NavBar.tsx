@@ -40,8 +40,8 @@ const NavBar = () => {
         <Image
           src={"/mason.png"}
           alt={"Me"}
-          width={50}
-          height={50}
+          width={60}
+          height={60}
           className={"rounded-full"}
         />
       </Link>

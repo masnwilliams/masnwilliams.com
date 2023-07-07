@@ -32,11 +32,9 @@ const HomePage = () => {
 
       <div className={"text-gray-700 text-base"}>
         {/* eslint-disable-next-line react/no-unescaped-entities */}
-        Welcome to my digital space! I'm an innovative tech entrepreneur and
-        advocate with a passion for gaming and the software developer community.
-        Dive in below to explore my blend of technical expertise, creative
-        thinking, and commitment to creating solutions that unite and empower
-        communities.
+        I'm an innovative tech advocate with a passion for gaming and the
+        software developer community. Check out my previous and current projects
+        below.
       </div>
 
       <div className={"mt-10"}>
