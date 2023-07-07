@@ -44,9 +44,15 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body className={figtree.className}>
         <NavBar />
 
-        <div className={"mt-14 sm:mt-32 mx-10 md:mx-32"}>{children}</div>
+        <div className={"mt-14 sm:mt-32 mx-10 sm:mx-20 md:mx-32"}>
+          {children}
+        </div>
 
         <Analytics />
+
+        <div className={"flex justify-center mt-14 text-gray-300"}>
+          As you can probably tell, the website is a work in progress 🥲
+        </div>
       </body>
     </html>
   );

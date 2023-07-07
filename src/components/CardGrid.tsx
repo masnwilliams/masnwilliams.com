@@ -21,13 +21,13 @@ const CardGrid = () => {
 
   return (
     <>
-      <div className="flex justify-end mb-4">
+      <div className="flex justify-center sm:justify-end mb-4">
         <input
           type="text"
           placeholder="Search projects..."
           value={searchTerm}
           onChange={handleChange}
-          className="border p-2 rounded"
+          className="border p-2 rounded w-80"
         />
 
         {/*<button className={"pl-2"} onClick={() => setSearchTerm("acquired")}>*/}

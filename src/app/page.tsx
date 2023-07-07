@@ -20,8 +20,10 @@ const HomePage = () => {
   }, []);
 
   return (
-    <>
-      <div className={"font-bold text-4xl mb-2"}>
+    <div>
+      <div
+        className={"max-sm:flex max-sm:justify-center font-bold text-4xl mb-2"}
+      >
         {typedText}
         <span
           className={`inline-block w-0.5 h-10 bg-black align-top ${
@@ -30,7 +32,9 @@ const HomePage = () => {
         ></span>
       </div>
 
-      <div className={"text-gray-700 text-base"}>
+      <div
+        className={"max-sm:flex max-sm:justify-center text-gray-700 text-base"}
+      >
         {/* eslint-disable-next-line react/no-unescaped-entities */}
         Check out what I've built 👇
       </div>
@@ -38,7 +42,7 @@ const HomePage = () => {
       <div className={"mt-10"}>
         <CardGrid />
       </div>
-    </>
+    </div>
   );
 };
 

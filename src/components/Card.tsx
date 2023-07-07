@@ -11,7 +11,7 @@ const Card = ({ title, image, description, link, status }: CardProps) => {
       case "inactive":
         return "bg-gray-200 text-gray-700";
       case "acquired":
-        return "bg-blue-400 text-blue-600";
+        return "bg-blue-200 text-blue-700";
       case "unmaintained":
         return "bg-yellow-200 text-yellow-700";
     }
