@@ -31,7 +31,7 @@ const socialLinks = [
 
 const SocialLinks = () => {
   return (
-    <div className="fixed top-11 right-0 pr-32 invisible sm:visible">
+    <div className="sm:fixed sm:top-11 sm:right-0 sm:pr-32">
       <ul className="flex items-center space-x-4 text-gray-700">
         {socialLinks.map((social) => (
           <li

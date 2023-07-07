@@ -31,7 +31,8 @@ const HomePage = () => {
       </div>
 
       <div className={"text-gray-700 text-base"}>
-        Check out some of my projects below.
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
+        Check out what I've built 👇
       </div>
 
       <div className={"mt-10"}>
