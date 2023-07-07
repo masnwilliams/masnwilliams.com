@@ -1,9 +1,9 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
-import NavBar from "@/components/NavBar";
+import { Figtree } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import NavBar from "@/components/NavBar";
 
-const inter = Inter({ subsets: ["latin"] });
+const figtree = Figtree({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Mason Williams",
@@ -18,12 +18,34 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
       </head>
 
-      <body className={inter.className}>
+      <body className={figtree.className}>
         <NavBar />
+
         <div className={"mx-32 mt-32"}>{children}</div>
+
         <Analytics />
       </body>
     </html>

@@ -33,7 +33,9 @@ const NavBar = () => {
     <div className={"flex justify-center my-10 gap-5"}>
       <Link
         href={"/"}
-        className={"absolute top-7 left-32 invisible sm:visible"}
+        className={
+          "absolute top-7 left-32 invisible sm:visible hover:scale-105 transition-all"
+        }
       >
         <Image
           src={"/mason.png"}
@@ -44,15 +46,15 @@ const NavBar = () => {
         />
       </Link>
 
-      {navItems.map((item) => (
-        <Link
-          href={item.href}
-          key={item.href}
-          className={linkClasses(item.href)}
-        >
-          {item.text}
-        </Link>
-      ))}
+      {/*{navItems.map((item) => (*/}
+      {/*  <Link*/}
+      {/*    href={item.href}*/}
+      {/*    key={item.href}*/}
+      {/*    className={linkClasses(item.href)}*/}
+      {/*  >*/}
+      {/*    {item.text}*/}
+      {/*  </Link>*/}
+      {/*))}*/}
 
       <SocialLinks />
     </div>
