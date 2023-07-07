@@ -31,10 +31,7 @@ const HomePage = () => {
       </div>
 
       <div className={"text-gray-700 text-base"}>
-        {/* eslint-disable-next-line react/no-unescaped-entities */}
-        I'm an innovative tech advocate with a passion for gaming and the
-        software developer community. Check out my previous and current projects
-        below.
+        Check out some of my projects below.
       </div>
 
       <div className={"mt-10"}>

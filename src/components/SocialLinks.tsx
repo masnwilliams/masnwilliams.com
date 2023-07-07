@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { GitHubIcon, LinkedInIcon, TwitterIcon } from "@/components/Icons";
+import {
+  GitHubIcon,
+  LinkedInIcon,
+  ThreadsIcon,
+  TwitterIcon,
+} from "@/components/Icons";
 
 const socialLinks = [
   {
@@ -16,6 +21,11 @@ const socialLinks = [
     name: "Twitter",
     link: "https://twitter.com/@masnwilliams",
     icon: <TwitterIcon size={24} />,
+  },
+  {
+    name: "Threads",
+    link: "https://threads.net/@johnmasonwilliams",
+    icon: <ThreadsIcon size={24} />,
   },
 ];
 
