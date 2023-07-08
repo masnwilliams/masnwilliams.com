@@ -5,7 +5,7 @@ export const projects: CardProps[] = [
     title: "BBR.gg",
     image: "/bbr-gg.png",
     description:
-      "BBR.gg is a companion app for the video game BattleBit Remastered, providing players with a platform to buy and sell digital goods.",
+      "BBR.gg is a companion app for the video game BattleBit Remastered, providing players with a platform to view stats, loadouts, and more.",
     link: "https://bbr.gg/",
     status: "active",
   },
