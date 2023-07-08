@@ -2,6 +2,7 @@ import "./globals.css";
 import { Figtree } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const figtree = Figtree({ subsets: ["latin"] });
 
@@ -50,9 +51,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 
         <Analytics />
 
-        <div className={"flex justify-center mt-14 text-gray-300"}>
-          As you can probably tell, the website is a work in progress 🥲
-        </div>
+        <Footer />
       </body>
     </html>
   );

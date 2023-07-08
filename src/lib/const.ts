@@ -2,6 +2,14 @@ import { CardProps } from "@/lib/types";
 
 export const projects: CardProps[] = [
   {
+    title: "BBR.gg",
+    image: "/bbr-gg.png",
+    description:
+      "BBR.gg is a companion app for the video game BattleBit Remastered, providing players with a platform to buy and sell digital goods.",
+    link: "https://bbr.gg/",
+    status: "active",
+  },
+  {
     title: "GreenScan",
     image: undefined,
     description:
