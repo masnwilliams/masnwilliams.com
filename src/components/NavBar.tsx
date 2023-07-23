@@ -30,12 +30,10 @@ const NavBar = () => {
   };
 
   return (
-    <div className={"flex justify-center my-10 gap-5"}>
+    <div className={"flex px-32 justify-center sm:justify-between my-10 gap-5"}>
       <Link
         href={"/"}
-        className={
-          "absolute top-7 left-32 invisible sm:visible hover:scale-105 transition-all"
-        }
+        className={"hidden sm:inline hover:scale-105 transition-all"}
       >
         <Image
           src={"/mason.png"}
