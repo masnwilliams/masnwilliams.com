@@ -7,7 +7,7 @@ export const projects: CardProps[] = [
     description:
       "BBR.gg is a companion app for the video game BattleBit Remastered, providing players with a platform to view stats, loadouts, and more.",
     link: "https://bbr.gg/",
-    status: "active",
+    status: "unmaintained",
   },
   {
     title: "GreenScan",
@@ -23,7 +23,7 @@ export const projects: CardProps[] = [
     description:
       "A centralized hub for the Apex Legends Esports community providing up-to-date news, tournament information, team standings, player profiles, and more.",
     link: "https://apl.gg/",
-    status: "active",
+    status: "unmaintained",
   },
   {
     title: "Bloxsmith",
