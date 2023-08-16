@@ -2,10 +2,18 @@ import { CardProps } from "@/lib/types";
 
 export const projects: CardProps[] = [
   {
+    title: "Forumify",
+    image: "/forumify.png",
+    description:
+      "Make your Discord forum channels available on the web, increasing SEO and brand visibility.",
+    link: "https://forumify.io/",
+    status: "active",
+  },
+  {
     title: "BBR.gg",
     image: "/bbr-gg.png",
     description:
-      "BBR.gg is a companion app for the video game BattleBit Remastered, providing players with a platform to view stats, loadouts, and more.",
+      "A companion app for the video game BattleBit Remastered, providing players with a platform to view stats, loadouts, and more.",
     link: "https://bbr.gg/",
     status: "unmaintained",
   },
