@@ -6,7 +6,7 @@ export const projects: CardProps[] = [
     image: "/forumify.png",
     description:
       "Make your Discord forum channels available on the web, increasing SEO and brand visibility.",
-    link: "https://www.forumify.io/",
+    link: "https://forumify.io/",
     status: "active",
   },
   {
