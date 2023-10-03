@@ -3,7 +3,7 @@ import { CardProps } from "@/lib/types";
 export const projects: CardProps[] = [
   {
     title: "The Millennial Spark",
-    image: "/tmm.png",
+    image: "/tms.png",
     description:
       'Merging first-hand experiences from my journey as a founder with insightful content and game-changing tools. All delivered to your inbox weekly.',
     link: "https://themillenialspark.com/",
