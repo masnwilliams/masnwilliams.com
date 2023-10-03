@@ -3,7 +3,7 @@ const nextConfig = {
     redirects: async () => [
         {
             source: '/newsletter',
-            destination: 'https://themillennialspark.com',
+            destination: 'https://themillennialspark.com/',
             permanent: false,
         },
     ],
