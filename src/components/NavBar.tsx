@@ -11,13 +11,9 @@ const navItems = [
     text: "Home",
   },
   {
-    href: "/projects",
-    text: "Projects",
-  },
-  {
-    href: "/blog",
-    text: "Blog",
-  },
+    href: '/newsletter',
+    text: 'Newsletter'
+  }
 ];
 
 const NavBar = () => {
@@ -44,15 +40,17 @@ const NavBar = () => {
         />
       </Link>
 
-      {/*{navItems.map((item) => (*/}
-      {/*  <Link*/}
-      {/*    href={item.href}*/}
-      {/*    key={item.href}*/}
-      {/*    className={linkClasses(item.href)}*/}
-      {/*  >*/}
-      {/*    {item.text}*/}
-      {/*  </Link>*/}
-      {/*))}*/}
+      <div className={'flex font-bold items-center justify-evenly space-x-4 sm:space-x-8'}>
+        {navItems.map((item) => (
+          <Link
+            href={item.href}
+            key={item.href}
+            className={`${linkClasses(item.href)}`}
+          >
+            {item.text}
+          </Link>
+        ))}
+      </div>
 
       <SocialLinks />
     </div>
