@@ -6,7 +6,7 @@ export const projects: CardProps[] = [
     image: "/tms.png",
     description:
       'Merging first-hand experiences from my journey as a founder with insightful content and game-changing tools. All delivered to your inbox weekly.',
-    link: "https://themillenialspark.com/",
+    link: "https://themillennialspark.com/",
     status: "active",
   },
   {
