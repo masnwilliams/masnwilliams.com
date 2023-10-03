@@ -5,7 +5,7 @@ export const projects: CardProps[] = [
     title: "The Millennial Spark",
     image: "/tmm.png",
     description:
-      'Handpicked insights for the ambitious: featuring trending content, standout products, and personal perspectives on wealth and success.',
+      'Merging first-hand experiences from my journey as a founder with insightful content and game-changing tools. All delivered to your inbox weekly.',
     link: "https://themillenialspark.com/",
     status: "active",
   },
