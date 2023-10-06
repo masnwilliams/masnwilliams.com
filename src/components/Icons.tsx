@@ -61,3 +61,27 @@ export const ThreadsIcon = ({ size }: { size: number }) => (
     ></path>
   </svg>
 );
+
+export const XIcon = ({ size }: { size: number }) => (
+//   <svg
+//     aria-label="X.com"
+//     viewBox="0 0 1668.56 1221.19"
+//     xmlns="http://www.w3.org/2000/svg"
+//     width={size}
+//     height={size}
+//     fill="currentColor"
+//   >
+//     <path id="path1009"
+//           d="M283.94,167.31l386.39,516.64L281.5,1104h87.51l340.42-367.76L984.48,1104h297.8L874.15,558.3l361.92-390.99 h-87.51l-313.51,338.7l-253.31-338.7H283.94z M412.63,231.77h136.81l604.13,807.76h-136.81L412.63,231.77z"></path>
+// </svg>
+  <svg
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 300.25 300.25"
+    fill="currentColor"
+  >
+    <path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"/>
+  </svg>
+);
