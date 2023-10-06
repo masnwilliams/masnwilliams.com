@@ -6,7 +6,7 @@ export const projects: CardProps[] = [
     image: "/lbd.png",
     description:
       'Merging first-hand experiences from founders with business insights through a weekly newsletter and podcast.',
-    link: "https://lbd.media/",
+    link: "/newsletter",
     status: "active",
   },
   {
