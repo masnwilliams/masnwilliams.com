@@ -9,11 +9,18 @@ const navItems = [
   {
     href: "/",
     text: "Home",
+    newTab: false
   },
   {
     href: '/newsletter',
-    text: 'Newsletter'
-  }
+    text: 'Newsletter',
+    newTab: true
+  },
+  // {
+  //   href: "/podcast",
+  //   text: "Podcast",
+  //   newTab: true
+  // }
 ];
 
 const NavBar = () => {
@@ -46,6 +53,8 @@ const NavBar = () => {
             href={item.href}
             key={item.href}
             className={`${linkClasses(item.href)}`}
+            target={item.newTab ? "_blank" : ""}
+            rel={item.newTab ? "noopener noreferrer" : ""}
           >
             {item.text}
           </Link>

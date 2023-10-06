@@ -2,11 +2,11 @@ import { CardProps } from "@/lib/types";
 
 export const projects: CardProps[] = [
   {
-    title: "The Millennial Spark",
-    image: "/tms.png",
+    title: "Learn By Doing",
+    image: "/lbd.png",
     description:
-      'Merging first-hand experiences with insightful content and game-changing tools. All delivered to your inbox weekly.',
-    link: "https://themillennialspark.com/",
+      'Merging first-hand experiences from founders with business insights through a weekly newsletter and podcast.',
+    link: "https://lbd.media/",
     status: "active",
   },
   {

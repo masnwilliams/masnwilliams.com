@@ -3,9 +3,14 @@ const nextConfig = {
     redirects: async () => [
         {
             source: '/newsletter',
-            destination: 'https://themillennialspark.com/',
+            destination: 'https://lbdnewsletter.com/',
             permanent: false,
         },
+        {
+            source: '/podcast',
+            destination: 'https://lbdpodcast.com/',
+            permanent: false,
+        }
     ],
 }
 
