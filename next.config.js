@@ -3,14 +3,14 @@ const nextConfig = {
     redirects: async () => [
         {
             source: '/newsletter',
-            destination: 'https://lbdnewsletter.com/',
+            destination: 'https://learnbydoing.beehiiv.com/',
             permanent: false,
         },
-        {
-            source: '/podcast',
-            destination: 'https://lbdpodcast.com/',
-            permanent: false,
-        }
+        // {
+        //     source: '/podcast',
+        //     destination: 'https://lbdpodcast.com/',
+        //     permanent: false,
+        // }
     ],
 }
 
