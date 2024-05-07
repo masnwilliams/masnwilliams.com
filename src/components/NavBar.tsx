@@ -39,7 +39,7 @@ const NavBar = () => {
         className={"hidden sm:inline hover:scale-105 transition-all"}
       >
         <Image
-          src={"/mason.png"}
+          src={"/mason.jpg"}
           alt={"Me"}
           width={60}
           height={60}
