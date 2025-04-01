@@ -5,7 +5,7 @@ export const projects: CardProps[] = [
     title: 'Fathom',
     image: '/fathom.png',
     description:
-      'AI-powered voice agents automating multilingual customer interactions, streamlining BPO operations, and making technology feel human.',
+      'Making technology more human, starting with AI voice agents that automate multilingual customer interactions.',
     link: 'https://getfathom.ai/',
     status: 'active',
   },
