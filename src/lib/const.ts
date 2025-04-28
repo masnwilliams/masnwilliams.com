@@ -15,7 +15,7 @@ export const projects: CardProps[] = [
     description:
       'Merging first-hand experiences from founders with business insights through a weekly newsletter and podcast.',
     link: '/newsletter',
-    status: 'active',
+    status: 'unmaintained',
   },
   {
     title: 'Forumify',
