@@ -2,6 +2,14 @@ import { CardProps } from '@/lib/types'
 
 export const projects: CardProps[] = [
   {
+    title: 'Kernel',
+    image: '/kernel.svg',
+    description:
+      'Browsers-as-a-service platform for web agents and browser automations with anti-bot detection and sub-millisecond startup.',
+    link: 'https://onkernel.com/',
+    status: 'active',
+  },
+  {
     title: 'Fathom',
     image: '/fathom.png',
     description:
