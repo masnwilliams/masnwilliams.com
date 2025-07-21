@@ -54,7 +54,7 @@ export const projects: CardProps[] = [
     image: '/apl-gg.png',
     description:
       'A centralized hub for the Apex Legends Esports community providing up-to-date news, tournament information, team standings, player profiles, and more.',
-    link: 'https://apl.gg/',
+    link: 'https://apl-gg.vercel.app/',
     status: 'unmaintained',
   },
   {

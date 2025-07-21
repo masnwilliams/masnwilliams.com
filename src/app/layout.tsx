@@ -45,7 +45,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body className={figtree.className}>
         <NavBar />
 
-        <div className={"mt-14 sm:mt-32 mx-6 sm:mx-20 md:mx-32"}>
+        <div className="mt-6 sm:mt-8 mx-4 sm:mx-20 md:mx-32">
           {children}
         </div>
 
