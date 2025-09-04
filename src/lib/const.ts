@@ -15,7 +15,7 @@ export const projects: CardProps[] = [
     description:
       'Making technology more human, starting with AI voice agents that automate multilingual customer interactions.',
     link: 'https://getfathom.ai/',
-    status: 'active',
+    status: 'unmaintained',
   },
   {
     title: 'Learn By Doing',
