@@ -2,6 +2,14 @@ import { CardProps } from '@/lib/types'
 
 export const projects: CardProps[] = [
   {
+    title: 'Better404',
+    image: undefined,
+    description:
+      'AI-powered 404 page recommendations that help users find the right content instead of dead ends using semantic search and vector embeddings.',
+    link: 'https://better404.dev/',
+    status: 'active',
+  },
+  {
     title: 'Kernel',
     image: '/kernel.svg',
     description:
