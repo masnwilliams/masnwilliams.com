@@ -3,7 +3,7 @@ import { CardProps } from '@/lib/types'
 export const projects: CardProps[] = [
   {
     title: 'Better404',
-    image: undefined,
+    image: '/better404.svg',
     description:
       'AI-powered 404 page recommendations that help users find the right content instead of dead ends using semantic search and vector embeddings.',
     link: 'https://better404.dev/',
