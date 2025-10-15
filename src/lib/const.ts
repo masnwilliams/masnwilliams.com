@@ -2,19 +2,19 @@ import { CardProps } from '@/lib/types'
 
 export const projects: CardProps[] = [
   {
+    title: 'Kernel',
+    image: '/kernel.svg',
+    description:
+    'Browsers-as-a-service platform for web agents and browser automations with anti-bot detection and sub-millisecond startup.',
+    link: 'https://onkernel.com/',
+    status: 'active',
+  },
+  {
     title: 'Better404',
     image: '/better404.svg',
     description:
       'AI-powered 404 page recommendations that help users find the right content instead of dead ends using semantic search and vector embeddings.',
     link: 'https://better404.dev/',
-    status: 'active',
-  },
-  {
-    title: 'Kernel',
-    image: '/kernel.svg',
-    description:
-      'Browsers-as-a-service platform for web agents and browser automations with anti-bot detection and sub-millisecond startup.',
-    link: 'https://onkernel.com/',
     status: 'active',
   },
   {
