@@ -152,3 +152,8 @@ fabric.properties
 .idea/**/azureSettings.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/webstorm
+
+analyze_finances.py
+financial_data.json
+check_analysis.py
+financial_report.html
