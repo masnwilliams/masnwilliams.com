@@ -5,8 +5,8 @@ export const projects: CardProps[] = [
     title: 'Kernel',
     image: '/kernel.svg',
     description:
-    'Browsers-as-a-service platform for web agents and browser automations with anti-bot detection and sub-millisecond startup.',
-    link: 'https://onkernel.com/',
+    'Browsers-as-a-service platform for web agents and browser automations with anti-bot detection and 30ms startup.',
+    link: 'https://kernel.sh/',
     status: 'active',
   },
   {
@@ -89,12 +89,12 @@ export const projects: CardProps[] = [
     link: 'https://space-foundry.com/',
     status: 'acquired',
   },
-  {
-    title: 'Movie-ception',
-    image: '/movie-ception.jpg',
-    description:
-      'A web application that allows users to search, save, and view their favorite movies and shows, with recommendations based on user preferences.',
-    link: 'https://movie-ception.vercel.app/',
-    status: 'unmaintained',
-  },
+  // {
+  //   title: 'Movie-ception',
+  //   image: '/movie-ception.jpg',
+  //   description:
+  //     'A web application that allows users to search, save, and view their favorite movies and shows, with recommendations based on user preferences.',
+  //   link: 'https://movie-ception.vercel.app/',
+  //   status: 'unmaintained',
+  // },
 ]
