@@ -1,0 +1,160 @@
+export const metadata = {
+  title: 'coding agents are local-first. browser agents are cloud-first.',
+  description: "local coding agents have exploded. background coding agents have friction. browser agents flipped the script. here's why.",
+  date: "2026-01-12",
+  draft: true,
+}
+
+the world of coding agents has exploded. if you're not using one every single day, you're ngmi. but background coding agents? they're not there yet.
+
+browser agents are the inverse. cloud browser automation has been running at scale for years. and now we get to watch all the new startups release their local browser agent.
+
+*disclosure: i work at [kernel](https://kernel.sh/), we build browser infra. take my browser agent opinions as you may. the coding agent stuff is just me as a dev.*
+
+i think the adoption patterns tell you something about observability.
+
+---
+
+## the coding agent gap
+
+### local coding agents
+
+cursor, claude code, opencode, amp code are being used by millions of developers every single day. the adoption is insane.
+
+why? the feedback loop.
+
+you as a dev are the loop. you see it working. you can intervene. if it goes sideways, you catch it in seconds, not minutes. the iteration speed is instant. you prompt, it writes, you review, you adjust. the tight cycle is the key.
+
+there's also trust. i don't fully trust a coding agent to go off, fix some bug or one-shot a feature, and come back with something reviewable. more often than not, i'll waste tokens watching it go down the wrong path, then end up restarting on a local coding agent anyway.
+
+local coding agents work because they feel like pair programming. background coding agents feel like delegating to someone who might or might not come back with what you wanted.
+
+### background coding agents
+
+cursor (again), codex, factory, devin (are they still relevant?). useful when you don't want to interrupt your local workflow.
+
+at kernel, one example of our use of background agents is that we run the cursor cli agent in CI to fix failed tests, update docs (both human and agent facing). no dev has to context-switch for it. wait, is this even a background coding agent?
+
+anyways, the key here is prompting clear tasks. i won't spin up a background agent for something it might go sideways on. ui updates, scoped maintenance, yes. anything with ambiguity, we are sticking to local.
+
+but here's what's holding it back:
+
+- **iteration speed**. you fire it off, wait, review a big diff. if it's wrong, you restart or else you waste more tokens watching it undo its incorrect work. the loop is broken.
+- **human-in-the-loop**. you're not watching it work. you can't nudge it mid-task. you're trusting it to figure it out and what a terrible idea that becomes.
+- **cost efficiency**. tokens burn while it explores. if it goes down the wrong path, you don't catch it until review. refer back to the first point.
+- **debugging**. something breaks, you're reading logs. on local, you just instantly *see* it happen. but no no no, now you have to break out of your flow to figure out why your background coding agent actually never even started in the first place. and then you go down the rabbit hole of how a $10b company can't figure out how to reliably run code sandboxes and start to question why you're writing a blog about it.
+
+i've talked to people building in this space. the observability problem is real, and everyone's trying to solve it differently.
+
+imo the problem isn't capability, it's the loop. background coding agents are async by nature. that's a feature for some use cases, but it's problematic for the core dev workflow.
+
+### parallelization
+
+one thing background coding agents do well is parallelization.
+
+on local, you're running one agent at a time. maybe two if you're brave. if you're running more than three locally, go touch some grass. with background coding agents, you can spin up 10 of them working on 10 different tasks and sometimes it actually does do what you want it to do.
+
+this is where cloud makes sense. batch work, not interactive work. "review these 20 prs for ai slop" is a cloud task. "help me build this feature" is a local task.
+
+---
+
+## the browser agent gap
+
+enter browser agents. cloud (legacy web automations) has been the default for years. local browser agents are just starting to enter the arena.
+
+### cloud browser agents
+
+from og selenium to the latest and greatest browser infra (will not shill). the infra keeps evolving. as new browser agents emerge, they inherit it.
+
+why cloud won for browsers:
+
+- **parallelization** — you're not running 500 chrome tabs on your macbook. if you are please dm me.
+- **session persistence** — keep auth state alive without a browser window hogging memory forever
+- **scheduling** — "every morning at 9am, scrape this site" is not a laptop job
+- **observability** — live views, replays, screenshots. you can always see what happened, even if you weren't watching.
+
+none of this requires your laptop. cloud browser agents are built for products, not demos.
+
+### local browser agents
+
+now enter the even more recent phase. comet. claude code's web extension. browser agents running on your machine.
+
+local browser agents are becoming more popular because:
+
+- **your context** — your cookies, your logins, your open tabs. the agent sees what you see.
+- **the feedback loop** — you watch it work. you can intervene. same trust dynamic as local coding agents.
+- **demo-ability** — record your screen, agent books a flight, post goes viral. local is visible.
+- **data** — companies releasing local browser agents are collecting valuable human interaction data. if you don't think this is true, i beg you to reconsider.
+
+interesting note: claude code's web extension can be [injected into cloud browsers](https://www.kernel.sh/docs/browsers/extensions) (not apologizing).
+
+you might be realizing that the differentiator between local and cloud browsers is very, very blurry.
+
+### the browser-to-coding-agent graveyard
+
+here's a rant.
+
+for a hot minute, there was a wave of startups shipping "better browser context for your coding agent." click an element, it gets added to your coding agent prompt. voilà. no more describing buttons in plain english. i saw this as something genuinely useful.
+
+one of them went semi-viral on twitter. within a week, i saw five more pop up. "we do the same thing but differently better." cool.
+
+then cursor shipped an in-IDE browser with all of that built in.
+
+haven't seen any of them since.
+
+this is the brutal reality of building in the agent tooling space right now. if your product is "a bridge between two things," you're one feature release away from getting absorbed. cursor, claude, openai, they're all shipping insanely fast for companies their size. if you are not owning some critical part of your stack, you're cooked.
+
+cursor's in-IDE browser gives you context + observability in one place. hard to compete with that.
+
+### the demo vs production split
+
+right now, the most viral browser agent demos on X are all local. someone records their screen. an agent fills out a form. video goes viral. hooray.
+
+demos work because they're watchable. production works because it's automatable.
+
+fun for demos. not how the majority of automation on a browser happens but it is being adopted and improved very quickly.
+
+production looks like a large fintech running 500+ parallel sessions to test checkout flows. an RPA company executing workflows for thousands of customers. a data team running scheduled scrapes.
+
+### why browser agents won trust first
+
+here's something i've been thinking about. the medium of observation is completely different between browser agents and coding agents.
+
+for browser agents, you *watch*. live views, replays, screenshots. it's visual. it's the same interface you'd use to browse the web yourself. observability is passive. you can glance at it and know if it's working.
+
+for coding agents, you *read*. diffs, logs, file changes. it's cognitive. you have to parse code, understand context, mentally simulate what changed. observability is active. you have to engage.
+
+this is why cloud browser automation was trusted first. you could always just watch it work (or watch the replay). the feedback loop for browsers is visual and cheap.
+
+the feedback loop for coding agents is textual and expensive. that's why local wins for coding. you're already in the code, reviewing as it writes is low friction. but reviewing a big diff from a background agent? that's a context switch into code review mode.
+
+**cloud browser agents won trust because watching is cheap. background coding agents have friction because reading is expensive.**
+
+---
+
+## the 2x2
+
+|  | Local | Cloud |
+|--|-------|-------|
+| **Coding Agents** | massive adoption. tight loop. feels like pair programming. | emerging. loop is broken. good for batch work when it works. |
+| **Browser Agents** | emerging. your context, demos go viral. | mature. production infra. not a laptop job. |
+
+the pattern. adoption follows observability.
+
+local coding agents won because devs need to be in the loop, and reading code requires active attention. cloud browser agents won because watching is passive, you can verify it's working with a glance.
+
+background coding agents are climbing the adoption curve but they need to make observability cheap. local browser agents are climbing too but they'll hit the same ceiling local browser automation always has (you can't scale your laptop).
+
+---
+
+## what's the point of this
+
+if you're building coding agent tools, make observability cheap. watching a diff isn't the same as watching a browser. figure out how to make "reviewing what the agent did" feel like glancing at a screen, not conducting a code review.
+
+if you're building browser agent tools, you're already in a good spot for cloud. the observability story is solved — live views, replays, screenshots. now it's about making local feel as trustworthy as cloud (context, auth, the personal stuff).
+
+the gap isn't about capability. it's about how expensive it is to verify the agent did what you wanted.
+
+---
+
+*Kernel provides cloud browser infrastructure for browser agents and web automations. [Get Started →](https://kernel.sh/docs/quickstart)*
