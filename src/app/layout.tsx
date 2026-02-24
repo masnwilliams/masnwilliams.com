@@ -1,10 +1,10 @@
 import "./globals.css";
-import { Figtree } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
-const figtree = Figtree({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Mason Williams",
@@ -42,7 +42,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <meta name="theme-color" content="#ffffff" />
       </head>
 
-      <body className={figtree.className}>
+      <body className={inter.className}>
         <NavBar />
 
         <div className="mt-6 sm:mt-8 mx-4 sm:mx-20 md:mx-32">
